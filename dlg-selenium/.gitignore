@@ -1,3 +1,4 @@
 /target/
 /.idea/
 /logs/
+/src/main/java/com.dlg.covercheck.pageFactory/
