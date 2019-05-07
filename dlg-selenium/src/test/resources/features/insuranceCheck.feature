@@ -26,6 +26,7 @@ Scenario Outline: Check for vehicle where insurance is not covered
         | RegNumber | SearchResult           |
         | XV12UYY   | Sorry record not found |
 
+
 Scenario Outline: Check for search result where invalid registration number entered
     Given User navigates to cover check page
     Then User validates page title as "Drive Away Insurance"
