@@ -16,28 +16,8 @@ import javax.annotation.PostConstruct;
 
 public class RequirementUtils {
 		
-	//private static final Logger log = Logger.getLogger(RequirementUtils.class);
-	
-	private static final String ENV_CONFIG_LOCATION = "env.config.location";
-	public static String home_location;
 	private static InputStream inputStream;
 	public static Properties properties;
-	private static String appQueueMessage;
-	private static String outQueueMessage;
-
-	
-	
-	@PostConstruct
-	public void initialize() {
-		try {
-			inputStream = getClass().getResourceAsStream("/env.properties");			
-			properties = new Properties();
-			properties.load(inputStream);
-		} catch (IOException e) {
-			//log.error(e.getMessage(), e);
-		}
-	}
-	
 
 	public  String getEnvPropertyValue(String propertyName) {
 		try {
