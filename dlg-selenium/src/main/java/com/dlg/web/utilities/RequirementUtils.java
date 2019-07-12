@@ -21,7 +21,7 @@ public class RequirementUtils {
 
 	public  String getEnvPropertyValue(String propertyName) {
 		try {
-			inputStream = getClass().getResourceAsStream("/dlg.properties");
+			inputStream = getClass().getResourceAsStream("/properties/style-enterprise-staging.properties");
 
 			properties = new Properties();
 			properties.load(inputStream);			

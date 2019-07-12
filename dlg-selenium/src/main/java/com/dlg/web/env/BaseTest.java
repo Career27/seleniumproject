@@ -16,4 +16,5 @@ public interface BaseTest
 	public static WebDriverWait wait = new WebDriverWait(driver, 30);
 
 
+
 }
